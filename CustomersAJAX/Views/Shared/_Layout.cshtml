@@ -1,14 +1,19 @@
-﻿<!DOCTYPE html>
+﻿
+@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
 
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@Page.Title</title>
+    <script src="~/Scripts/bootstrap.min.js"></script>
     <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
     <script src="~/Scripts/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-    <div>
+    <div class="container container-body">
         @RenderPage("_Header.cshtml") 
         @RenderBody()
     </div>

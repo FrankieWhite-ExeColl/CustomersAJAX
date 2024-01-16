@@ -10,7 +10,7 @@
     };
 }
 
-@using (Ajax.BeginForm("OnSelectCustomer", "Customer", ajaxOptions, new {id="customerForm" } ))
+@using (Ajax.BeginForm("OnSelectCustomer", "Customer", ajaxOptions, new { id = "customerForm" }))
 {
     @Html.AntiForgeryToken();
     var selected = false;
@@ -26,11 +26,12 @@
         {
             selected = false;
         }
-        @Html.RadioButton("CustomerNumber", customer.ID, selected, new { onchange="$('#customerForm').trigger('submit')" } );
+        @Html.RadioButton("CustomerNumber", customer.ID, selected, new { onchange = "$('#customerForm').trigger('submit')" });
         @Html.Label(customer.Name)
         <br />
     }
-    <input type="submit" id="SubmitButton" value="Display details" />
+    <!-- not required as using a onchange event from the radio buttons
+    <input type="submit" id="SubmitButton" value="Display details" />-->
 }
 
 <!-- insert a partical view here.  Show customer details.  Pass the second item of the tuple model -->
