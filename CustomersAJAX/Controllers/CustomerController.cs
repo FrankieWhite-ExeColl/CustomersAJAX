@@ -12,11 +12,11 @@ namespace CustomersAJAX.Controllers
     {
 
         Customer customer;
-        List<customer> customers;
+        List<Customer> customers;
 
         public CustomerController()
         {
-
+            customers = new List<Customer>();
             customers.Add(new Customer(0, "Sherry", 37));
             customers.Add(new Customer(1, "Tim", 12));
             customers.Add(new Customer(2, "Charlene", 98));
