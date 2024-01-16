@@ -25,7 +25,7 @@ namespace CustomersAJAX.Controllers
         }
 
 
-        // GET: Customer
+       
         public ActionResult Index()
         {
 
