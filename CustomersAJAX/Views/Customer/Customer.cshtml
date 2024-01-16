@@ -21,3 +21,9 @@
         }
     <input type="submit" id="SubmitButton" value="Display details" />
 }
+
+<!-- insert a partical view here.  Show customer details.  Pass the second item of the tuple model -->
+
+<div id="customerInfo">
+    @Html.Partial("~/Views/Shared/_CustomerDetails.cshtml", Model.Item2)
+</div>
