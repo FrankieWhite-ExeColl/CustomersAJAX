@@ -10,10 +10,12 @@ namespace CustomersAJAX.Controllers
 {
     public class CustomerController : Controller
     {
+
         Customer customer;
         List<customer> customers;
 
-        public CustomerController() {
+        public CustomerController()
+        {
 
             customers.Add(new Customer(0, "Sherry", 37));
             customers.Add(new Customer(1, "Tim", 12));
@@ -24,8 +26,6 @@ namespace CustomersAJAX.Controllers
             customers.Add(new Customer(6, "Dave", 34));
         }
 
-
-       
         public ActionResult Index()
         {
 
